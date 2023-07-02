@@ -7,29 +7,94 @@
 <section class="py-5 text-center container">
   <div class="row py-lg-5">
     <div class="col-lg-6 col-md-8 mx-auto">
-      <h1 class="fw-light">Album example</h1>
-      <p class="lead text-body-secondary">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
+      <h1 class="fw-bold text-info">Abhishek Giri</h1>
+      <p class="lead text-body-secondary fw-normal">Data-driven CS engineer with expertise in data science, web development, and real-world projects. Proficient in Python, SQL, ML, C++, and data structures. Strong problem-solving skills and collaborative team player.</p>
       <p>
-        <a href="#" class="btn btn-primary my-2">Main call to action</a>
-        <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+        <a href="{% url 'about-me' %}" class="btn btn-outline-danger my-2">About Me</a>
+        <a href="https://github.com/Abhirdms" class="btn btn-outline-info my-2">Github</a>
+        <a href="https://www.linkedin.com/in/abhirdms/" class="btn btn-outline-success my-2">Linkedin</a>
       </p>
     </div>
   </div>
 </section>
 
 
-<div class="d-flex p-5 mb-4 bg-body-tertiary rounded-3">
-  <div class="container-fluid py-5">
+
+<section class = "bg-light">
+  <h2 class= "text-dark text-center">Area of Interest</h2> 
+
+
+
+<div class="d-flex p-4 mb-3 justify-content-between rounded-3">
+  {% comment %} <div class="container-fluid py-5">
     <h1 class="display-5 fw-bold">Custom jumbotron</h1>
     <p class="col-md-8 fs-4">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p>
     <button class="btn btn-primary btn-lg" type="button">Example button</button>
+  </div> {% endcomment %}
+  <div class="btn btn-outline-secondary h-100 p-3 m-4 rounded-3">
+    <h2 class =" text-center">Artificial Intelligence</h2>
+    <p class =" text-justify">AI is prevalent in today's world, impacting various sectors such as healthcare, finance, and transportation.
+       It enhances efficiency, automates tasks, and raises ethical concerns regarding privacy and job displacement</p>
   </div>
-  <div class="h-100 p-5 text-bg-dark rounded-3">
-    <h2>Change the background</h2>
-    <p>Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look. Then, mix and match with additional component themes and more.</p>
-    <button class="btn btn-outline-light" type="button">Example button</button>
+  <div class="btn btn-outline-info h-100 p-3 m-4  rounded-3">
+    <h2 class =" text-center">Data Science</h2>
+    <p class =" text-justify">Data science plays a crucial role in the current world by extracting insights from vast amounts of data,
+       enabling informed decision-making, and driving innovation across industries and domains.</p>
+   
   </div>
+  <div class="btn btn-outline-danger h-100 p-3 m-4  rounded-3">
+    <h2 class =" text-center">Machine Learning</h2>
+    <p class =" text-justify">Machine learning plays a critical role in today's world by enabling intelligent systems to learn from data, 
+      make predictions, and automate tasks, revolutionizing industries like healthcare, finance, and transportation.</p>
+   
+  </div>
+  
 </div>
+<div class="d-flex p-4 mb-3 justify-content-between rounded-3">
+  <div class="btn btn-outline-warning h-100 p-3 m-4 rounded-3">
+    <h2 class =" text-center">Web Development</h2>
+    <p class =" text-justify">Web development is a crucial aspect of the modern world, encompassing the 
+      creation and maintenance of websites and web applications to meet the evolving needs of businesses, organizations, and individuals.</p>
+  </div>
+  <div class="btn btn-outline-primary h-100 p-3 m-4  rounded-3">
+    <h2 class =" text-center">Mathematics</h2>
+    <p class =" text-justify">Mathematics plays a vital role in the current world, from finance and data analysis to technology and cryptography,
+       providing the foundation for solving complex problems and advancing scientific and technological innovations</p>
+   
+  </div>
+  <div class="btn btn-outline-info h-100 p-3 m-4  rounded-3">
+    <h2 class =" text-center">Natural Language Processing</h2>
+    <p class =" text-justify">Natural Language Processing (NLP) is a rapidly advancing field that focuses on enabling computers to 
+      understand, interpret, and generate human language, revolutionizing applications such as chatbots, translation, sentiment analysis, and information extraction.</p>
+   
+  </div>
+  
+</div>
+</section>
+
+<section class = "bg-light">
+  <h2 class= "text-dark text-center">Projects Link</h2> 
+  <div class = " d-flex justify-content-evenly">
+
+      {% comment %} <a style= " height: 400px; width: 100%; background-image: url("\static\about-me\assets\img\man.png");"
+       href="" class="btn btn-outline-danger my-2">Movie Recommendation System</a> {% endcomment %}
+       <a  href="" class="btn btn-outline-danger  my-2">Movie Recommendation System</a>
+
+    <a href="" class="btn btn-outline-danger my-2">Design Desk</a>
+    <a href="" class="btn btn-outline-danger my-2">Reedulearn</a>
+    <a href="" class="btn btn-outline-danger my-2">DBRAU-IQAC</a>
+  </div>
+
+  <div class = " d-flex justify-content-evenly">
+    <a href="" class="btn btn-outline-danger my-2">Portfolio</a>
+    <a href="" class="btn btn-outline-danger my-2">QBL Research</a>
+    <a href="" class="btn btn-outline-danger my-2">PBL Research Paper</a>
+    <a href="" class="btn btn-outline-danger my-2">Virtual AI Assistant</a>
+  </div>
+
+
+
+</section>
 
 
 
